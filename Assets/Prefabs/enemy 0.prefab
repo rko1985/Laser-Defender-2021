@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6703212388316940353}
   - component: {fileID: -2319753005459770451}
   - component: {fileID: 7968202389732435941}
+  - component: {fileID: 3385011037378494831}
   m_Layer: 7
   m_Name: enemy 0
   m_TagString: Untagged
@@ -111,6 +112,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+--- !u!114 &3385011037378494831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785015157702589720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9166b4f58b04d4545824b812aa0c773e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 2451026613768540446, guid: dd99d5ad7b5929846891d7d5c14d1b6b, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 5
+  baseFiringRate: 1
+  useAI: 1
+  firingRateVarinace: 0.5
+  minimumFiringRate: 0.1
+  isFiring: 0
 --- !u!1 &9085318393231342102
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,13 +156,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9085318393231342102}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4975052671961915482}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &8620747072852455393
 SpriteRenderer:
   m_ObjectHideFlags: 0
